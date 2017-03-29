@@ -1,0 +1,6 @@
+# SocketPushClient
+最近项目中要求做推送，基于内网的。由于工期不是很紧，需求不是很严格，所以放弃了使用三方的推送框架，
+基于Socket自己写了消息推送功能（服务端+android端）。
+服务器端使用java，客户端使用Android。本人是做Android开发的，所以demo重点介绍客户端的一些代码，
+包括Socket的TCP长连接及发消息，Service如何不被轻易杀死，通过aidl实现界面实时与Service的通信，
+可以在界面上控制Socket的连接与断开以及发消息，并采用了Parcelable对象实现aidl传参
